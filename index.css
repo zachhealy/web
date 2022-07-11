@@ -55,7 +55,7 @@ a:hover{
   padding-top: 5vh;
   padding-left: 20vh;
   padding-bottom: 5vh; 
-  height: 60vh;
+  height: auto;
   margin: 0;
 
 }
