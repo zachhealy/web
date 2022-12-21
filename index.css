@@ -3,6 +3,23 @@
   zoom: 1.0 ;
 }
 
+
+header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  justify-content: space-between;
+  padding-left: 33%;
+  padding-right: 33%;
+  padding-top: 25px;
+  background-color: #D7D9CE;
+  color: #0C7489;
+  font-size: 25px;
+  font-weight: 300;
+}
+
 body{
   font-family: 'Roboto Mono';
   margin: 0px;
@@ -28,6 +45,17 @@ a{
 
 a:hover{
   color: #0C7489;
+
+}
+
+.headerA{
+  color: #0C7489;
+
+}
+
+.headLogo{
+  width: 50px;
+  height: 50px;
 
 }
 
@@ -82,10 +110,10 @@ a:hover{
   color: #13505B;
   text-align: center;
   margin: 0;
-  padding-top: 5vh;
+  padding-top: 2.5vh;
   padding-left: 20vh;
   padding-right: 20vh;
-  padding-bottom: 5vh;
+  padding-bottom: 2.5vh;
 
 }
 
@@ -121,7 +149,17 @@ a:hover{
 }
 
 .typing {
-  width: 27ch;
+  width: 28ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: 'Roboto Mono';
+  font-size: 5vh;
+}
+
+.Htyping {
+  width: 16ch;
   animation: typing 2s steps(22), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
@@ -139,5 +177,55 @@ a:hover{
 @keyframes blink {
   50% {
     border-color: transparent
+  }
+}
+
+
+
+.grid-block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: fit-content;
+  background: #D7D9CE;
+  padding-bottom: 10px;
+  margin: 0 auto;
+
+}
+
+
+.gridRow {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+
+/* Create four equal columns that sits next to each other */
+.gridColumn {
+  flex: 25%;
+  max-width: 33%;
+  padding: 0 10px;
+}
+
+.gridColumn img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .gridColumn {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .gridColumn {
+    flex: 100%;
+    max-width: 100%;
   }
 }
