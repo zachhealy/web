@@ -244,9 +244,10 @@ a:hover{
 
 
 .button {
-  display: inline-block;
+  font-family: 'Roboto Mono';
+  display: flex;
   border-radius: 4px;
-  background-color: #f4511e;
+  background-color: #0C7489;
   border: none;
   color: #FFFFFF;
   text-align: center;
@@ -256,6 +257,8 @@ a:hover{
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
+  justify-content: center;
+  align-items: center;
 }
 
 .button span {
