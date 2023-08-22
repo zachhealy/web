@@ -1,287 +1,129 @@
-@viewport {
-  width: device-width ;
-  zoom: 1.0 ;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0f0f23; /* Dark background color */
+  margin: 0;
+  padding: 0;
+  color: #fff; /* Text color */
 }
-
 
 header {
-  display: flex;
-  position: relative;
-  align-items: center;
-  flex-shrink: 0;
-  border-color: transparent;
-  justify-content: space-between;
-  padding-left: 33%;
-  padding-right: 33%;
-  padding-top: 25px;
-  background-color: #D7D9CE;
-  color: #0C7489;
-  font-size: 25px;
-  font-weight: 300;
-}
-
-body{
-  font-family: 'Roboto Mono';
-  margin: 0px;
 
 }
-
-h2{
-  font-size: 3vh;
-
-}
-
-h1{
-  font-size: 5vh;
-}
-
 
 a{
   text-decoration: none;
-  color: #D7D9CE;
-  transition: color .5s;
-
+  color: #56569a;
 }
 
-a:hover{
-  color: #0C7489;
-
-}
-
-.headerA{
-  color: #0C7489;
-
-}
-
-.headLogo{
-  width: 50px;
-  height: 50px;
-
-}
-
-.zh-block{
-  color: #0C7489;
-  background-color: #D7D9CE;
-  height: 100vh;
-  font-size: 5vh;
-  margin: 0px;
-
-}
-
-.pl-block{
-  color: #D7D9CE;
-  background-color: #13505B;
-  height: 50vh;
+h1{
+  font-size: 100px;
+  margin: 10px;
   text-align: center;
+}
+
+h2{
+  text-align: center;
+  font-size: 35px;
+}
+
+
+
+
+button{
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  color: #fff;
+  border: 2px solid #fff; /* White outline border */
+  border-radius: 5px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1a1a33;
+  border-color: #1a1a33;
+  color: #fff;
+  box-shadow: 0 0 10px #fff; /* Adding a glow effect */
 
 }
 
-.am-block{
-  background-color: #119DA4;
-  color: #D7D9CE;
-  padding-right: 20vh;
-  padding-top: 5vh;
-  padding-left: 20vh;
-  padding-bottom: 5vh; 
-  height: auto;
-  margin: 0;
-
-}
-
-.am-block img{
-  border-radius: 26% 26% 26% 26% / 0% 25% 25% 25%;
-  height: 70%;
-  width: 70%;
-
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
   position: relative;
-  top: 20%;
-  left: 10%;
-
-  -webkit-box-shadow: 7px 7px 10px 4px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 7px 7px 10px 4px rgba(0, 0, 0, 0.25);
-  box-shadow: 7px 7px 10px 4px rgba(0, 0, 0, 0.25);
-  
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
 
 }
 
-.port-block{
-  background-color: #119DA4;
-  color: #D7D9CE;
-  padding-top: 5vh;
-  padding-bottom: 5vh; 
-  height: auto;
-  margin: 0;
-  text-align: center;
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.about-me, .project-buttons {
+  margin-top: 30px;
+}
+
+.project-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-button {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  color: #fff;
+  border: 2px solid #fff; /* White outline border */
+  border-radius: 10px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  background-color: #1a1a33;
+  min-width: 200px;
+  max-width: 500px;
+
+}
+.am-container{
+  padding: 50px;
+  background-color: #e6e6eb;
+  color: #1a1a33;
+}
+
+.proj-container{
+  padding: 0px 50px;
+}
+
+.project-button:hover {
+  background-color: #fff;
+  border-color: #1a1a33;
+  color: #1a1a33;
+  box-shadow: 0 0 10px #fff; /* Adding a glow effect */
 
 }
 
 .footer{
-  height: 20vh;
-  background-color: #D7D9CE;
-  color: #13505B;
   text-align: center;
-  margin: 0;
-  padding-top: 2.5vh;
-  padding-left: 20vh;
-  padding-right: 20vh;
-  padding-bottom: 2.5vh;
-
+  background: #1a1a33;
+  padding: 25px;
+  
 }
 
-.footer a{
-  color: #119DA4;
-  transition: color .5s;
-
-}
-
-.footer a:hover{
-  color: #0C7489;
-
-}
-
-.row{
-  display: flex;
-
-}
-
-.column{
-  flex: 50%;
-  padding: 2vh;
-
-}
-
-
-.wrapper {
-  height: 20vh;
-  padding-top: 30vh;
-  padding-left: 20vh;
-  padding-bottom: 10vh;
-
-}
-
-.typing {
-  width: 28ch;
-  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-family: 'Roboto Mono';
-  font-size: 5vh;
-}
-
-.Htyping {
-  width: 16ch;
-  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-family: 'Roboto Mono';
-  font-size: 5vh;
-}
-
-@keyframes typing {
-  from {
-    width: 0
-  }
-}
-    
-@keyframes blink {
-  50% {
-    border-color: transparent
-  }
-}
-
-
-
-.grid-block{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  max-width: fit-content;
-  background: #D7D9CE;
-  padding-bottom: 0px;
-  padding-top: 10px;
-  margin: 0 auto;
-
-}
-
-
-.gridRow {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 10px;
-}
-
-/* Create four equal columns that sits next to each other */
-.gridColumn {
-  flex: 25%;
-  max-width: 33%;
-  padding: 0 10px;
-}
-
-.gridColumn img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .gridColumn {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .gridColumn {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-
-
-.button {
-  font-family: 'Roboto Mono';
-  display: flex;
-  border-radius: 4px;
-  background-color: #0C7489;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 28px;
+.head{
+  background: radial-gradient(#1a1a33, #454595); /* Slightly darker background color for header */
   padding: 20px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-  justify-content: center;
-  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
+.proj-head{
+  margin: 0px 15vw;
+  text-align: center;
 }

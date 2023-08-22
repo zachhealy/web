@@ -10,86 +10,84 @@
     <link rel="stylesheet" type="text/css" href="index.css">
     <script src="https://kit.fontawesome.com/5c1e65ff90.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   </head>
 
   
-  <main>
-    <header>
-      <span>
-        <a class = 'headerA' href = 'development.html'>development</a>
-      </span>
-      <span>
-        <a class = 'headerA' href = 'index.html'> <img class = 'headLogo' src = 'zjh.png' alt = 'zjh logo'> </a>
-      </span>
-      <span>
-        <a class = 'headerA' href = 'design.html'>design</a>
-      </span>
-    </header>
-
-    <body>
-      <section class="zh-block">
-        <div class="wrapper">
-          <h1 class="typing">
-            Hi, my name is Zach Healy.
-          </h1>
-          <h2>
-            I am a UI/UX developer <br>
-            and Graphic Designer attending <br>
-            Southeast Missouri State University,  <br>
-            pursuing a degree in computer science.
-        </h2>
+  <body>
+    <div class = 'head'>
+        <div id="particles-js"></div>
+        <div class="container">
+            <h1>Zach Healy</h1>
+            <h2>Web Developer & Graphic Designer</h2>
         </div>
-      </section>
-    </body>
+    </div>
 
-    <body>
-      <script>
-        import confetti from "canvas-confetti";
-
-
-      </script>
-      
-      <section class="am-block">
-        <div class = 'row'>
-          <div class = 'column'>
-            <h1>
-              About me
-            </h1>
-            <h2>
-              Getting to design and create new software and website with real values
-              was always something that I was drawn towards, and with both a programming
-              and design background, I decided to take the steps to be a frontend developer.
-              I am currently working towards my computer science degree right now, and have
-              been a graphic designer for the last 2 years, working for my univeristy as well
-              as for companies such as Redbull and Riot Games.
-          </h2>
-          </div>
-  
-        </div>
-  
+    <div class="am-container">
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>Getting to design and create new software and website with real values was always something that 
+                I was drawn towards, and with both a programming and design background, I decided to take the steps 
+                to be a frontend developer. I am currently working towards my computer science degree right now, and 
+                have been a graphic designer for the last 2 years, working for my univeristy as well as for companies 
+                such as Redbull and Riot Games.</p>
         </section>
-      
-        <section class = 'am-block'>
-          <button class = 'button' onclick="confetti({particleCount: 1000, spread: 10000, origin: { y: 0.6 }});">
-            <span>
-              Confetti
-            </span>
-          </button>
+    </div>
+    </br>
+    <div class="proj-container">
+      <div class = 'proj-head'>
+        <h2>Projects</h2>
+        <p>A pretty good summary of a lot of my projects! If nothing here is stunning to you, feel free to check
+          out my <a href = 'https://www.github.com/zachhealy'>GitHub</a>, I try to keep all of my code updated on there
+          for both my own sake and the sake of anyone interested! It features most of the work from my 4 years of college
+          as well as some personal projects like the website we are on now!
+        </p>
+      </div>
+        <section class="project-buttons">
+            <a class="project-button" href="https://github.com/zachhealy/NHLDataAnalysis">
+                <h3>NHL Player Stat Tracker</h3>
+                <p>My final project that I made for my Computer Science 3 class. It uses selenium to scrape the NHL website and organizes all of the stat-lines in a readable table. Also allowing for organization and searching either by stat-line or player name</p>
+            </a>
+            <a class="project-button" href="https://github.com/zachhealy/website">
+                <h3>My Personal Website</h3>
+                <p>A website coded using HTML, CSS, and JavaScript to showcase my development and design protofolio! Future plans include a spot for people to submit a form to get in contact with me, managed through a database.</p>
+            </a>
+            <a class="project-button" href="https://plantjobs.greatdane.com">
+                <h3>Plant Jobs Maintance</h3>
+                <p>This was a task given during my internship at Great Dane to keep their jobs websites up to date for their various plants, in multiple languages</p>
+            </a>
+            <a class="project-button" href="https://fleet-pulse.com">
+                <h3>FleetPulse</h3>
+                <p>This was a project I worked on during my internship at Great Dane. The goal was to work on a website's flow and SEO in order to help retain existing customers, as well as draw in new ones.</p>
+            </a>
+            <a class="project-button" href="https://github.com/zachhealy/programmingProblems">
+              <h3>Programming Problems</h3>
+              <p>This repo houses a bunch of the various programming problems from sites such as LeetCode and HackerRank that I've stored over time. Have a challenge for me? Message me and I'd love to give it a shot!</p>
+          </a>
+            <button class = 'project-button' onclick="confetti({particleCount: 1000, spread: 10000, origin: { y: 0.6 }});">
+                <h3>Confetti</h3>
+                <p>For all those times the Canvas confetti doesn't work</p>
+            </button>
         </section>
+        
+    </div>
 
-
+    <br>
+    
       <section class = 'footer'>
         <div>
-          <p>Website by Zach Healy</p>
+          <p>Website created and maintained by Zach Healy</p>
           <p>Find me on <a href="http://Github.com/ZachHealy">Github</a>,<p>
           <p>Or connect with me on <a href="https://www.linkedin.com/in/zachary-healy-8665a51b7/">Linkedin</a>,</p>
-          <p>Even follow me on <a href="http://twitter.com/zjhealy">Twitter</a>!</p>
-          
+          <p>Even follow me on <a href="http://twitter.com/zjhealy">Twitter</a>!</p> 
         </div>
 
       </section>
+      
+      <script src = 'confetti.js'></script>
+      <script src = 'parts.js'></script>
+      <script src = 'header.js'></script>
 
-    </body>
-  </main>
+  </body>
 
 </html>
