@@ -23,6 +23,10 @@ h2{
   font-size: 7.5vmin;
 }
 
+.about-me p{
+  text-align: center;
+}
+
 
 button{
   display: inline-block;
