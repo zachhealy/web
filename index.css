@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Raleway', sans-serif;
   background-color: #0f0f23; /* Dark background color */
   margin: 0;
   font-size: 16px;
@@ -91,7 +91,7 @@ button:hover {
   border-radius: 10px;
   transition: background-color 0.3s ease, border-color 0.3s ease;
   background-color: #1a1a33;
-  min-width: 200px;
+  min-width: 300px;
   max-width: 500px;
 
 }
@@ -123,7 +123,6 @@ button:hover {
 .head{
   background: radial-gradient(#1a1a33, #454595); /* Slightly darker background color for header */
   padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .proj-head{
@@ -131,30 +130,27 @@ button:hover {
   text-align: center;
 }
 
-.sticky-header {
-  position: fixed;
-  top: 0;
-  left: 0;
+.header {
+  display: flex;
   width: 100%;
-  background-color: rgba(0, 0, 0, .2);
   color: white;
   padding: 10px 0;
-  z-index: 1000;
-  padding: 10px;
+  background-color: rgb(255, 255, 255, 0.1);
+  justify-content: center;
 }
 
-.sticky-header nav ul {
+.header nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
 }
 
-.sticky-header nav li {
-  margin-right: 20px;
+.header nav li {
+  margin-right: 30px;
 }
 
-.sticky-header nav a {
+.header nav a {
   text-decoration: none;
   color: white;
 }
