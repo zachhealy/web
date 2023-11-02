@@ -123,8 +123,8 @@ button:hover {
 }
 
 .head{
-  background: radial-gradient(#1a1a33, #454595); /* Slightly darker background color for header */
-  padding: 20px;
+  background-image: url('test.png');
+  padding: 30px;
 }
 
 .proj-head{
