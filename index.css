@@ -1,10 +1,10 @@
 body {
   font-family: 'Raleway', sans-serif;
-  background-color: #0f0f23; /* Dark background color */
+  background-color: #0f0f23;
   margin: 0;
   font-size: 16px;
   padding: 0;
-  color: #fff; /* Text color */
+  color: #fff;
 }
 
 a{
@@ -33,7 +33,7 @@ button{
   margin: 10px;
   padding: 10px 20px;
   color: #fff;
-  border: 2px solid #fff; /* White outline border */
+  border: 2px solid #fff;
   border-radius: 5px;
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
@@ -42,15 +42,12 @@ button:hover {
   background-color: #1a1a33;
   border-color: #1a1a33;
   color: #fff;
-  box-shadow: 0 0 10px #fff; /* Adding a glow effect */
+  box-shadow: 0 0 10px #fff;
 
 }
 
 .container {
 	max-width: 1200px;
-	/* margin: auto auto; */
-	/* position: relative; */
-	/* z-index: 1; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -63,7 +60,14 @@ button:hover {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 78%;
+}
+
+#particles-js-design {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .about-me, .project-buttons {
@@ -134,6 +138,8 @@ button:hover {
   padding: 50px;
   background-size: cover;
   background-image: url('test.png');
+  align-items: center;
+  justify-content: center;
   
 }
 
@@ -231,7 +237,7 @@ button:hover {
   text-align: center;
   max-width: fit-content;
   padding-bottom: 0px;
-  padding-top: 10px;
-  margin: 0 auto;
+  padding-top: 100px;
+  margin: auto;
   max-width: 1200px;
 }
